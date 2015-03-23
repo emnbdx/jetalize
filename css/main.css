@@ -207,14 +207,18 @@ body { background: #f1f1f1; padding:0 }
 
 	.slider .slider-arrows i {
 		color:#ffffff;
-		font-size: 30px;
+		font-size: 24px;
+		font-weight: bold;
 		cursor: pointer;
+		
+		border: 2px solid;
+  		border-radius: 50%;	
+		padding: .2em .5em;  	
 	}
 
 	.slider .slider-arrows i:hover {
 		color:#1d82e5;
 	}
-
 
 /* [03] About Us */
 	.about {
@@ -891,15 +895,46 @@ body { background: #f1f1f1; padding:0 }
 		margin-top: 15px;
 		margin-bottom: 20px;
 	}
+
+	.contact .social-icons .fa-facebook {
+		color: #3b5998;
+  		border-color: #3b5998;
+  		padding: .3em 0.5em;
+	}
+
+	.contact .social-icons .fa-facebook:hover {
+		background: #3b5998;
+	}
+
+	.contact .social-icons .fa-twitter {
+		color: #00a0d1;
+  		border-color: #00a0d1;
+  		padding: .3em;
+	}
+
+	.contact .social-icons .fa-twitter:hover {
+		background: #00a0d1;
+	}
+
+	.contact .social-icons .fa-google-plus {
+		color: #db4a39;
+  		border-color: #db4a39;
+  		padding: .3em;
+	}
+
+	.contact .social-icons .fa-google-plus:hover {
+		background: #db4a39;
+	}
 	
 	.contact .social-icons a {
 		font-size: 26px;
-		color:#666666;
 		text-decoration: none;
+		border: 2px solid;
+  		border-radius: 50%;
 	}
 	
 	.contact .social-icons a:hover {
-		color:#1d82e5;
+		color:#fff;
 	}
 	
 	.contact .form {

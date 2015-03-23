@@ -1,6 +1,6 @@
+"use strict";
+
 $(document).ready(function() {
- 
-	'use strict';
 
 	// SMOOTH SCROLL SETTINGS
 	smoothScroll.init({
@@ -10,75 +10,75 @@ $(document).ready(function() {
 	});
 	
 	// MAIN SLIDER OWL CAROUSEL
-		var owl_slider = $("#owl-slider");
+	var owl_slider = $("#owl-slider");
 
-		owl_slider.owlCarousel({
-			pagination : false, // Show paggination dots
-			navigation : false, // Show next and prev buttons
-			slideSpeed : 1000,
-			rewindSpeed : 1000,
-			singleItem: true,
-			autoPlay: 5000,
-			stopOnHover: true,
-			transitionStyle : "fadeUp"
-		});
+	owl_slider.owlCarousel({
+		pagination : false, // Show paggination dots
+		navigation : false, // Show next and prev buttons
+		slideSpeed : 1000,
+		rewindSpeed : 1000,
+		singleItem: true,
+		autoPlay: 5000,
+		stopOnHover: true,
+		transitionStyle : "fadeUp"
+	});
 
-		// Custom Navigation Events
-		$(".next").click(function(){ owl_slider.trigger('owl.next'); });
-		$(".prev").click(function(){ owl_slider.trigger('owl.prev'); });
+	// Custom Navigation Events
+	$(".next").click(function(){ owl_slider.trigger('owl.next'); });
+	$(".prev").click(function(){ owl_slider.trigger('owl.prev'); });
 
 	// TOURS OWL CAROUSEL
-		var owl_tours = $("#owl-tours");
-		owl_tours.owlCarousel({
-			pagination : true, // Show paggination dots
-			navigation : false, // Show next and prev buttons
-			slideSpeed : 1000,
-			rewindSpeed : 1000,
-			items : 4, //10 items above 1000px browser width
-			itemsDesktop : [1000,4], //5 items between 1000px and 901px
-			itemsDesktopSmall : [900,3], // betweem 900px and 601px
-			itemsTablet: [600,2], //2 items between 600 and 0
-			itemsMobile : [480,1] // itemsMobile disabled - inherit from itemsTablet option
-		});
+	var owl_tours = $("#owl-tours");
+	owl_tours.owlCarousel({
+		pagination : true, // Show paggination dots
+		navigation : false, // Show next and prev buttons
+		slideSpeed : 1000,
+		rewindSpeed : 1000,
+		items : 4, //10 items above 1000px browser width
+		itemsDesktop : [1000,4], //5 items between 1000px and 901px
+		itemsDesktopSmall : [900,3], // betweem 900px and 601px
+		itemsTablet: [600,2], //2 items between 600 and 0
+		itemsMobile : [480,1] // itemsMobile disabled - inherit from itemsTablet option
+	});
 		
 	// DESTINATIONS OWL CAROUSEL
-		$("#owl-destinations").owlCarousel({
-			pagination : true, // Show paggination dots
-			navigation : false, // Show next and prev buttons
-			slideSpeed : 1000,
-			rewindSpeed : 1000,
-			items : 3, //10 items above 1000px browser width
-			itemsDesktop : [1000,3], //5 items between 1000px and 901px
-			itemsDesktopSmall : [900,3], // betweem 900px and 601px
-			itemsTablet: [600,2], //2 items between 600 and 0
-			itemsMobile : [480,1] // itemsMobile disabled - inherit from itemsTablet option
-		});
+	$("#owl-destinations").owlCarousel({
+		pagination : true, // Show paggination dots
+		navigation : false, // Show next and prev buttons
+		slideSpeed : 1000,
+		rewindSpeed : 1000,
+		items : 3, //10 items above 1000px browser width
+		itemsDesktop : [1000,3], //5 items between 1000px and 901px
+		itemsDesktopSmall : [900,3], // betweem 900px and 601px
+		itemsTablet: [600,2], //2 items between 600 and 0
+		itemsMobile : [480,1] // itemsMobile disabled - inherit from itemsTablet option
+	});
 		
 	// DEALS OWL CAROUSEL
-		$("#owl-deals").owlCarousel({
-			pagination : true, // Show paggination dots
-			navigation : false, // Show next and prev buttons
-			slideSpeed : 1000,
-			rewindSpeed : 1000,
-			items : 4, //10 items above 1000px browser width
-			itemsDesktop : [1000,4], //5 items between 1000px and 901px
-			itemsDesktopSmall : [900,3], // betweem 900px and 601px
-			itemsTablet: [600,2], //2 items between 600 and 0
-			itemsMobile : [480,1] // itemsMobile disabled - inherit from itemsTablet option
-		});
+	$("#owl-deals").owlCarousel({
+		pagination : true, // Show paggination dots
+		navigation : false, // Show next and prev buttons
+		slideSpeed : 1000,
+		rewindSpeed : 1000,
+		items : 4, //10 items above 1000px browser width
+		itemsDesktop : [1000,4], //5 items between 1000px and 901px
+		itemsDesktopSmall : [900,3], // betweem 900px and 601px
+		itemsTablet: [600,2], //2 items between 600 and 0
+		itemsMobile : [480,1] // itemsMobile disabled - inherit from itemsTablet option
+	});
 		
 	// CRUISE OWL CAROUSEL
-		$("#owl-cruise").owlCarousel({
-			pagination : true, // Show paggination dots
-			navigation : false, // Show next and prev buttons
-			slideSpeed : 1000,
-			rewindSpeed : 1000,
-			items : 3, //10 items above 1000px browser width
-			itemsDesktop : [1000,3], //5 items between 1000px and 901px
-			itemsDesktopSmall : [900,1], // betweem 900px and 601px
-			itemsTablet: [600,1], //2 items between 600 and 0
-			itemsMobile : [480,1] // itemsMobile disabled - inherit from itemsTablet option
-		});
+	$("#owl-cruise").owlCarousel({
+		pagination : true, // Show paggination dots
+		navigation : false, // Show next and prev buttons
+		slideSpeed : 1000,
+		rewindSpeed : 1000,
+		items : 3, //10 items above 1000px browser width
+		itemsDesktop : [1000,3], //5 items between 1000px and 901px
+		itemsDesktopSmall : [900,1], // betweem 900px and 601px
+		itemsTablet: [600,1], //2 items between 600 and 0
+		itemsMobile : [480,1] // itemsMobile disabled - inherit from itemsTablet option
+	});
 		
 	// Flights & Hotels Tabs Settings
 	$(".tabs a").click(function(){
@@ -133,44 +133,46 @@ $(document).ready(function() {
 		}, 1000);
 
 	});
+
 	
 });
 
 //HEADER ANIMATION
 $(window).scroll(function(){
 
-	'use strict';
-	
 	if ( $(window).scrollTop() > 49 ) {
+		
 		$(".topnav .navbar").removeClass("navbar-static-top").addClass("navbar-fixed-top").addClass("top-nav-collapse");
+	
 	} else {
+		
 		$(".topnav .navbar").removeClass("navbar-fixed-top").removeClass("top-nav-collapse").addClass("navbar-static-top");
+	
 	}
 	
 });
 
 //WINDOW LOAD FUNCTIONS
 $(window).load(function(){
-
-	'use strict';
 	
 	//PARALLAX BACKGROUND
 	$(window).stellar({
+
 		horizontalScrolling: false,
+
 	});
 	
 });
 
 // WOW Settings
 var wow = new WOW({
+
 	boxClass:     'wow',      // animated element css class (default is wow)
 	animateClass: 'animated', // animation css class (default is animated)
 	offset:       0,          // distance to the element when triggering the animation (default is 0)
 	mobile:       false       // trigger animations on mobile devices (true is default)
+
 });
-
-wow.init();
-
 
 // CONTACT FORM FUNCTION
 var contact_send = function(){
@@ -203,3 +205,147 @@ var contact_send = function(){
 	}
 
 };
+
+function initialize() {
+				
+	// Basic options for a simple Google Map
+	// For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+	var mapOptions = {
+		// How zoomed in you want the map to start at (always required)
+		zoom: 11,
+
+		// The latitude and longitude to center the map (always required)
+		center: new google.maps.LatLng(45.6832407, -1.1798334000000068),
+
+		// How you would like to style the map. 
+		// This is where you would paste any style found on Snazzy Maps.
+		styles: [
+			{
+				featureType:"road",
+				elementType:"labels",
+				stylers:[
+					{
+						visibility:"simplified"
+					},
+					{
+						lightness:20
+					}
+					]
+			},
+			{
+				featureType:"administrative.land_parcel",
+				elementType:"all",
+				stylers:[
+					{
+						visibility:"off"
+					}
+				]	
+			},
+			{
+				featureType:"landscape.man_made",
+				elementType:"all",
+				stylers:[
+					{
+						visibility:"off"
+					}
+				]
+			},
+			{
+				featureType:"transit",
+				elementType:"all",
+				stylers:[
+					{
+						visibility:"off"
+					}
+				]
+			},
+			{
+				featureType:"road.local",
+				elementType:"labels",
+				stylers:[
+					{
+						visibility:"simplified"
+					}
+				]
+			},
+			{
+				featureType:"road.local",
+				elementType:"geometry",
+				stylers:[
+					{
+						visibility:"simplified"
+					}
+				]	
+			},
+			{
+				featureType:"road.highway",
+				elementType:"labels",
+				stylers:[
+					{
+						visibility:"simplified"
+					}
+				]
+			},
+			{
+				featureType:"poi",
+				elementType:"labels",
+				stylers:[
+					{
+						visibility:"off"
+					}
+				]
+			},
+			{
+				featureType:"road.arterial",
+				elementType:"labels",
+				stylers:[
+					{
+						visibility:"off"
+					}
+				]
+			},
+			{
+				featureType:"water",
+				elementType:"all",
+				stylers:[
+					{
+						hue:"#a1cdfc"
+					},
+					{
+						saturation:30
+					},{
+						lightness:49
+					}
+				]
+			},
+			{
+				featureType:"road.highway",
+				elementType:"geometry",
+				stylers:[
+					{
+						hue:"#f49935"
+					}
+				]
+			},
+			{
+				featureType:"road.arterial",
+				elementType:"geometry",
+				stylers:[
+					{
+						hue:"#fad959"
+					}
+				]
+			}
+		]
+	};
+
+	// Get the HTML DOM element that will contain your map 
+	// We are using a div with id="map" seen below in the <body>
+	var mapCanvas = document.getElementById('map');
+
+	// Create the Google Map using out element and options defined above
+	var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+
+wow.init();
+google.maps.event.addDomListener(window, 'load', initialize);
