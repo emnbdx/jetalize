@@ -134,6 +134,9 @@ $(document).ready(function() {
 
 	});
 
+	if($("#copyright").val() != new Date().getFullYear()) {
+		$("#copyright").append(" - " + new Date().getFullYear());
+	}
 	
 });
 
