@@ -134,7 +134,7 @@ $(document).ready(function() {
 
 	});
 
-	if($("#copyright").val() != new Date().getFullYear()) {
+	if($("#copyright").text() != new Date().getFullYear()) {
 		$("#copyright").append(" - " + new Date().getFullYear());
 	}
 	

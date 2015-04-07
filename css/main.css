@@ -49,6 +49,8 @@ h2 {
 }
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .pink {
   color: #e2007a;
@@ -153,8 +155,7 @@ ul {
 .slider .item a {
   text-decoration: none;
 }
-.slider .item a:after {
-  content: attr(data-text);
+.slider .item a .content {
   text-align: center;
   width: 100%;
   margin: 0 auto;
@@ -169,6 +170,9 @@ ul {
   color: #ffffff;
   letter-spacing: -4px;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+.slider .item a .content.dark {
+  color: #e2007a;
 }
 .slider .slider-arrows {
   position: absolute;
@@ -203,6 +207,13 @@ ul {
   letter-spacing: -1px;
   text-align: center;
   color: #999;
+}
+.about .desc li:before {
+  margin-right: 10px;
+}
+.about .desc .about-more img {
+  width: 20px;
+  margin-right: 10px;
 }
 /* [04] Last Minute Deal */
 .last-minute {
