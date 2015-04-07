@@ -843,7 +843,7 @@ ul {
   .slider {
     margin-top: 91px;
   }
-  .slider .item a:after {
+  .slider .item a .content {
     font-size: 25px;
     letter-spacing: -1px;
     top: 30%;
