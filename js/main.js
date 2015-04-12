@@ -26,21 +26,7 @@ $(document).ready(function() {
 	// Custom Navigation Events
 	$(".next").click(function(){ owl_slider.trigger('owl.next'); });
 	$(".prev").click(function(){ owl_slider.trigger('owl.prev'); });
-
-	// TOURS OWL CAROUSEL
-	var owl_tours = $("#owl-tours");
-	owl_tours.owlCarousel({
-		pagination : true, // Show paggination dots
-		navigation : false, // Show next and prev buttons
-		slideSpeed : 1000,
-		rewindSpeed : 1000,
-		items : 4, //10 items above 1000px browser width
-		itemsDesktop : [1000,4], //5 items between 1000px and 901px
-		itemsDesktopSmall : [900,3], // betweem 900px and 601px
-		itemsTablet: [600,2], //2 items between 600 and 0
-		itemsMobile : [480,1] // itemsMobile disabled - inherit from itemsTablet option
-	});
-		
+	
 	// DESTINATIONS OWL CAROUSEL
 	$("#owl-destinations").owlCarousel({
 		pagination : true, // Show paggination dots
@@ -55,12 +41,12 @@ $(document).ready(function() {
 	});
 		
 	// DEALS OWL CAROUSEL
-	$("#owl-deals").owlCarousel({
+	$("#owl-business").owlCarousel({
 		pagination : true, // Show paggination dots
 		navigation : false, // Show next and prev buttons
 		slideSpeed : 1000,
 		rewindSpeed : 1000,
-		items : 4, //10 items above 1000px browser width
+		items : 2, //10 items above 1000px browser width
 		itemsDesktop : [1000,4], //5 items between 1000px and 901px
 		itemsDesktopSmall : [900,3], // betweem 900px and 601px
 		itemsTablet: [600,2], //2 items between 600 and 0
@@ -68,7 +54,7 @@ $(document).ready(function() {
 	});
 		
 	// CRUISE OWL CAROUSEL
-	$("#owl-cruise").owlCarousel({
+	$("#owl-freaky").owlCarousel({
 		pagination : true, // Show paggination dots
 		navigation : false, // Show next and prev buttons
 		slideSpeed : 1000,
