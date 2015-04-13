@@ -2,7 +2,7 @@
 @mainColor: #1a171b;
 @lightGrey: #999999;
 @secondColor: #e2007a;
-@thirdColor: #1183b9;
+@thirdColor: #704214;
 
 * {
 
@@ -287,13 +287,16 @@ ul {
 
 
 .warning {
-	background-color: @thirdColor;
-	background-image: url(../img/dotted_worldmap.png);
+	background-image: url(../img/sepia-large.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
-	padding: 30px 0;
 	
+	.pattern {
+		background-color: fadeout(@thirdColor, 50%);
+		padding: 100px 0;
+	}
+
 	h1 {
 		color: #ffffff
 	}
@@ -477,7 +480,6 @@ ul {
 
 /* [08] Destinations */
 .destinations {
-	background-color: @mainColor;
 	background-image: url(../img/clouds.jpg);
 	background-size: cover;
 	background-attachment: fixed;
@@ -485,7 +487,7 @@ ul {
 		
 	.pattern {
 		background-color: fadeout(@thirdColor, 50%);
-		padding: 120px 0 80px 0
+		padding: 120px 0 80px 0;
 	}
 	
 	h1 {
@@ -690,7 +692,6 @@ ul {
 
 
 .freaky {
-	background-color: @mainColor;
 	background-image: url(../img/beach.jpg);
 	background-size: cover;
 	background-attachment: fixed;
@@ -815,7 +816,7 @@ ul {
 		border-radius: 5px;
 	}
 	
-	.footer-text {
+	.address {
 		font-family: "Roboto Slab";
 		font-size: 16px;
 		font-weight: 400;
@@ -905,6 +906,7 @@ ul {
 	}
 	
 }
+
 
 @media (max-width: 780px) {
 

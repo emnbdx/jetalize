@@ -86,35 +86,35 @@ $(document).ready(function() {
 	});
 	
 	// Tour details actions
-	$(".tours .item button").click(function(){
+	$(".business .item button").click(function(){
 	
 		var data_page = $(this).attr("data-page");
 		
-		$(".tours .tour-detail").html("");
-		$(".tours .tour-detail").append('<div class="loading">Loading...</div>');
+		$(".business .tour-detail").html("");
+		$(".business .tour-detail").append('<div class="loading">Loading...</div>');
 		
 		$("#owl-tours").addClass("hidden");
-		$(".tours .tour-detail").removeClass("hidden");
+		$(".business .tour-detail").removeClass("hidden");
 		
 		setTimeout(function(){
 		
 			// perform ajax request
 			$.ajax({
-				url: "ajax_tours/"+data_page,
+				url: "detail/" + data_page,
 				type: 'GET',
 				dataType: 'HTML'
 			}).done( function (result) {
 				
-				$(".tours .tour-detail .loading").remove();
-				$(".tours .tour-detail").append(result);
+				$(".business .tour-detail .loading").remove();
+				$(".business .tour-detail").append(result);
 				
 				// Tour details close icon actions
-				$(".tours .tour-detail .close").click(function(){
+				$(".business .tour-detail .close").click(function(){
 					$("#owl-tours").removeClass("hidden");
-					$(".tours .tour-detail").addClass("hidden");
+					$(".business .tour-detail").addClass("hidden");
 				});
 				
-			}).fail(function() { $(".tours .tour-detail .loading").html("File not loading : ajax_tours/"+data_page); });
+			}).fail(function() { $(".business .tour-detail .loading").html("File not loading : detail/" + data_page); });
 		
 		}, 1000);
 

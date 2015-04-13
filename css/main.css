@@ -197,12 +197,14 @@ ul {
   margin-right: 10px;
 }
 .warning {
-  background-color: #1183b9;
-  background-image: url(../img/dotted_worldmap.png);
+  background-image: url(../img/sepia-large.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  padding: 30px 0;
+}
+.warning .pattern {
+  background-color: rgba(112, 66, 20, 0.5);
+  padding: 100px 0;
 }
 .warning h1 {
   color: #ffffff;
@@ -340,14 +342,13 @@ ul {
 }
 /* [08] Destinations */
 .destinations {
-  background-color: #1a171b;
   background-image: url(../img/clouds.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 .destinations .pattern {
-  background-color: rgba(17, 131, 185, 0.5);
+  background-color: rgba(112, 66, 20, 0.5);
   padding: 120px 0 80px 0;
 }
 .destinations h1 {
@@ -514,14 +515,13 @@ ul {
   color: #333333;
 }
 .freaky {
-  background-color: #1a171b;
   background-image: url(../img/beach.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 .freaky .pattern {
-  background-color: rgba(17, 131, 185, 0.5);
+  background-color: rgba(112, 66, 20, 0.5);
   padding: 120px 0 80px 0;
 }
 .freaky h1 {
@@ -617,7 +617,7 @@ ul {
   height: 185px;
   border-radius: 5px;
 }
-.contact .footer-text {
+.contact .address {
   font-family: "Roboto Slab";
   font-size: 16px;
   font-weight: 400;

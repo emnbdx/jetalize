@@ -1,0 +1,53 @@
+SetEnv PHP_VER 5_4
+SetEnv REGISTER_GLOBALS 0
+
+# Charset
+AddDefaultCharset UTF-8
+
+# Compression
+<IfModule mod_deflate.c>
+	SetOutputFilter DEFLATE
+	AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript
+</IfModule>
+
+# Redirection
+<IfModule mod_alias.c>
+	Redirect permanent /content/contact.php /contenu/contact.php
+	Redirect permanent /content/me.php /contenu/qui-suis-je.php
+	Redirect permanent /content/price.php /contenu/tarifs.php
+</IfModule>
+
+# Contrôle du cache navigateur - Expire headers  
+<IfModule mod_expires.c>  
+    ExpiresActive On
+    ExpiresDefault "access plus 7200 seconds"
+    ExpiresByType image/jpg             	"access plus 2 week"
+    ExpiresByType image/jpeg           		"access plus 2 week"
+    ExpiresByType image/png             	"access plus 2 week"
+    ExpiresByType image/gif             	"access plus 2 week"
+    AddType image/x-icon .ico  
+    ExpiresByType image/ico             	"access plus 2 week"
+    ExpiresByType image/icon            	"access plus 2 week"
+    ExpiresByType image/x-icon          	"access plus 2 week"
+    ExpiresByType text/css              	"access plus 1 week"
+    ExpiresByType text/javascript       	"access plus 1 week"
+    ExpiresByType application/javascript    "access plus 1 week"
+    ExpiresByType application/x-javascript  "access plus 1 week"
+    ExpiresByType text/html             	"access plus 7200 seconds"
+    ExpiresByType application/xhtml+xml     "access plus 7200 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>  
+<FilesMatch "\\.(ico|jpe?g|png|gif|swf)$">  
+Header set Cache-Control "max-age=1296000, public"
+</FilesMatch>  
+<FilesMatch "\\.(css)$">  
+Header set Cache-Control "max-age=604800, public"  
+</FilesMatch>  
+<FilesMatch "\\.(js)$">  
+Header set Cache-Control "max-age=604800, private"  
+</FilesMatch>  
+<FilesMatch "\\.(x?html?|php)$">  
+Header set Cache-Control "max-age=600, private, must-revalidate"  
+</FilesMatch>  
+</IfModule> 
