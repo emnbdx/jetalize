@@ -141,18 +141,6 @@ $(window).scroll(function(){
 	
 });
 
-//WINDOW LOAD FUNCTIONS
-$(window).load(function(){
-	
-	//PARALLAX BACKGROUND
-	$(window).stellar({
-
-		horizontalScrolling: false,
-
-	});
-	
-});
-
 // WOW Settings
 var wow = new WOW({
 

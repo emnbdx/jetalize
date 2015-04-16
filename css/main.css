@@ -36,6 +36,12 @@ ul {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
 .pink {
   color: #e2007a;
 }
@@ -340,21 +346,13 @@ ul {
   padding-top: 30px;
   text-align: left;
 }
-/* [08] Destinations */
 .destinations {
-  background-image: url(../img/clouds.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-.destinations .pattern {
-  background-color: rgba(112, 66, 20, 0.5);
   padding: 120px 0 80px 0;
 }
 .destinations h1 {
-  color: #ffffff;
-  text-shadow: 1px 1px #5a94cc;
-  margin-bottom: 30px;
+  color: #ef2700;
+  text-shadow: 1px 1px #ffffff;
+  margin-bottom: 40px;
 }
 .destinations .item {
   cursor: pointer;
@@ -429,12 +427,19 @@ ul {
   color: #fff;
 }
 .business {
+  background-image: url(../img/clouds.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.business .pattern {
+  background-color: rgba(112, 66, 20, 0.5);
   padding: 120px 0 80px 0;
 }
 .business h1 {
-  color: #ef2700;
-  text-shadow: 1px 1px #ffffff;
-  margin-bottom: 40px;
+  color: #ffffff;
+  text-shadow: 1px 1px #5a94cc;
+  margin-bottom: 30px;
 }
 .business .item {
   margin: 0 20px;

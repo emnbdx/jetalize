@@ -50,6 +50,18 @@ ul {
 
 }
 
+a {
+
+	text-decoration: none;
+
+	&:hover {
+
+		text-decoration: none;
+
+	}
+
+}
+
 .pink {
 
 	color: @secondColor;
@@ -478,22 +490,15 @@ ul {
 
 }
 
-/* [08] Destinations */
+
 .destinations {
-	background-image: url(../img/clouds.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-		
-	.pattern {
-		background-color: fadeout(@thirdColor, 50%);
-		padding: 120px 0 80px 0;
-	}
+
+	padding: 120px 0 80px 0;
 	
 	h1 {
-		color: #ffffff;
-		text-shadow: 1px 1px #5a94cc;
-		margin-bottom: 30px
+		color:#ef2700;
+		text-shadow: 1px 1px #ffffff;
+		margin-bottom: 40px;
 	}
 
 	.item {
@@ -586,13 +591,22 @@ ul {
 	
 
 .business {
-	padding: 120px 0 80px 0;
+
+	background-image: url(../img/clouds.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+		
+	.pattern {
+		background-color: fadeout(@thirdColor, 50%);
+		padding: 120px 0 80px 0;
+	}
 	
 	h1 {
-		color:#ef2700;
-		text-shadow: 1px 1px #ffffff;
-		margin-bottom: 40px;
-	}
+		color: #ffffff;
+		text-shadow: 1px 1px #5a94cc;
+		margin-bottom: 30px
+	}	
 	
 	.item {
 		margin: 0 20px;
