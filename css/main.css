@@ -211,7 +211,7 @@ a:hover {
   margin-right: 10px;
 }
 .warning {
-  background-image: url(../img/sepia-large.jpg);
+  background-image: url(../img/bg1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -347,7 +347,7 @@ a:hover {
   text-align: left;
 }
 .custom {
-  background-image: url(../img/bg1.jpg);
+  background-image: url(../img/bg2.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -524,7 +524,7 @@ a:hover {
   color: #333333;
 }
 .destinations {
-  background-image: url(../img/clouds.jpg);
+  background-image: url(../img/bg3.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;

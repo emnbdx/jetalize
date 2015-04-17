@@ -120,6 +120,10 @@ $(document).ready(function() {
 
 	});
 
+	$(".new").click(function () {
+		$('.boats').click();
+	});
+
 	if($("#copyright").text() != new Date().getFullYear()) {
 		$("#copyright").append(" - " + new Date().getFullYear());
 	}
