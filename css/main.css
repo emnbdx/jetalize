@@ -529,6 +529,14 @@ a:hover {
   font-weight: 400;
   margin-bottom: 5px;
 }
+.contact .form .mail-error {
+  color: red;
+  margin-bottom: 5px;
+}
+.contact .form .mail-success {
+  color: green;
+  margin-bottom: 5px;
+}
 .contact .copyright {
   font-size: 14px;
 }

@@ -150,26 +150,53 @@ var contact_send = function(){
 	var phone	= $("#phone").val();
 	var message = $("#message").val();
 	
-	if ( name=="" ){ alert("Your name is empty!"); $("#name").focus(); }
-	else if ( email=="" ){ alert("Your email address is empty!"); $("#email").focus(); }
-	else if ( phone=="" ){ alert("Your phone number is empty!"); $("#phone").focus(); }
-	else if ( message=="" ){ alert("Your message is empty!"); $("#message").focus(); }
+	$(".mail-error").addClass('hidden'); 
+	$(".mail-success").addClass('hidden'); 
+
+	if (name == "") { 
+		$(".mail-error").text("Votre nom est vide"); 
+		$(".mail-error").removeClass('hidden'); 
+		$("#name").focus(); 
+	}
+	else if (email == "") {
+		$(".mail-error").text("Votre email est vide");
+		$(".mail-error").removeClass('hidden');
+		$("#email").focus();
+	}
+	/*else if (phone == "") {
+		$(".mail-error").text("Votre téléphone est vide");
+		$(".mail-error").removeClass('hidden');
+		$("#phone").focus();
+	}*/
+	else if (message == "") { 
+		$(".mail-error").text("Votre message est vide");
+		$(".mail-error").removeClass('hidden');
+		$("#message").focus();
+	}
 	else {
-		$.post("contact.send.php", { name:name, email:email, phone:phone, message:message }, function( result ){
-			if ( result=="SUCCESS" ){
-				alert("Your contact form is sent.");
-				setTimeout(function(){
-					$("#name").val("");
-					$("#email").val("");
-					$("#phone").val("");
-					$("#message").val("");
-				}, 3000);
-			} else if ( result=="EMAIL-ERROR" ){
-				alert("Your contact form isn't sent. Please check your email address and try again.");
-			} else {
-				alert("Your contact form isn't sent. Please check fields and try again.");
-			}
-		});
+		$.post("contact.php", 
+			{ 
+				name:name, 
+				email:email, 
+				phone:phone, 
+				message:message 
+			}, 
+			function (result) {
+				if (result == "SUCCESS") {
+					$(".mail-success").text("Votre message a bien été envoyé"); 
+					$(".mail-success").removeClass('hidden');
+
+					setTimeout(function () {
+						$("#name").val("");
+						$("#email").val("");
+						$("#phone").val("");
+						$("#message").val("");
+					}, 3000);
+				} else {
+					$(".mail-error").text("Erreur lors de l'envoi du message");
+					$(".mail-error").removeClass('hidden');
+				}
+			});
 	}
 
 };
