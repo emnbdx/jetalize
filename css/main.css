@@ -17,6 +17,7 @@ h1 {
   font-weight: 700;
   letter-spacing: -1px;
   text-align: center;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
   color: #1a171b;
   margin: 0;
   padding: 0;
@@ -45,6 +46,15 @@ a:hover {
 .pink {
   color: #e2007a;
 }
+.small {
+  padding: 5px 0;
+  font-family: "Roboto Slab";
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #ffffff;
+}
 .btn {
   border-radius: 3px;
   font-family: "Roboto";
@@ -53,29 +63,27 @@ a:hover {
   letter-spacing: -1px;
   border: none;
   text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4f4652), color-stop(1, #1a171b));
+  background-image: -o-linear-gradient(bottom, #4f4652 0%, #1a171b 100%);
+  background-image: -moz-linear-gradient(bottom, #4f4652 0%, #1a171b 100%);
+  background-image: -webkit-linear-gradient(bottom, #4f4652 0%, #1a171b 100%);
+  background-image: -ms-linear-gradient(bottom, #4f4652 0%, #1a171b 100%);
+  background-image: linear-gradient(to bottom, #4f4652 0%, #1a171b 100%);
+  /*&:hover {
+		text-shadow: 1px 1px #35661c;
+	}*/
 }
-.btn-success {
-  color: #3d6f23;
-  text-shadow: 1px 1px #89cc6c;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #82d344), color-stop(1, #51af34));
-  background-image: -o-linear-gradient(bottom, #82d344 0%, #51af34 100%);
-  background-image: -moz-linear-gradient(bottom, #82d344 0%, #51af34 100%);
-  background-image: -webkit-linear-gradient(bottom, #82d344 0%, #51af34 100%);
-  background-image: -ms-linear-gradient(bottom, #82d344 0%, #51af34 100%);
-  background-image: linear-gradient(to bottom, #82d344 0%, #51af34 100%);
+.btn:hover {
+  color: #e2007a;
 }
-.btn-success:hover {
-  text-shadow: 1px 1px #35661c;
-}
-.btn-primary {
-  color: #22619f;
-  text-shadow: 1px 1px #5196da;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #57abff), color-stop(1, #1d81e5));
-  background-image: -o-linear-gradient(bottom, #57abff 0%, #1d81e5 100%);
-  background-image: -moz-linear-gradient(bottom, #57abff 0%, #1d81e5 100%);
-  background-image: -webkit-linear-gradient(bottom, #57abff 0%, #1d81e5 100%);
-  background-image: -ms-linear-gradient(bottom, #57abff 0%, #1d81e5 100%);
-  background-image: linear-gradient(to bottom, #57abff 0%, #1d81e5 100%);
+.fa {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
 }
 .pattern {
   background: url(../img/pattern.png) repeat;
@@ -215,20 +223,15 @@ a:hover {
 .warning h1 {
   color: #ffffff;
 }
-.warning .small {
-  padding: 5px 0;
-  font-family: "Roboto Slab";
-  font-size: 20px;
-  font-weight: 300;
-  letter-spacing: -1px;
-  text-align: center;
-  color: #ffffff;
-}
 .warning .stars {
   text-align: center;
 }
 .price {
   padding: 120px 0 80px 0;
+}
+.price h1 {
+  color: #1a171b;
+  margin-bottom: 30px;
 }
 .price .tabs ul {
   margin: 0;
@@ -242,19 +245,16 @@ a:hover {
   background: #ffffff;
   border-radius: 5px 5px 0 0;
 }
+.price .tabs ul li.active a {
+  color: #e2007a;
+}
 .price .tabs a {
   font-family: "Roboto Slab";
   font-size: 26px;
   font-weight: 600;
-  color: #ffffff;
+  color: #1a171b;
   letter-spacing: -1px;
   text-decoration: none;
-}
-.price .tabs a.treks {
-  color: #1a171b;
-}
-.price .tabs a.rents {
-  color: #e2007a;
 }
 .price .tabs-content {
   background: #ffffff;
@@ -346,38 +346,39 @@ a:hover {
   padding-top: 30px;
   text-align: left;
 }
-.destinations {
-  padding: 120px 0 80px 0;
+.custom {
+  background-image: url(../img/bg1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-.destinations h1 {
-  color: #ef2700;
-  text-shadow: 1px 1px #ffffff;
-  margin-bottom: 40px;
+.custom .pattern {
+  background-color: rgba(112, 66, 20, 0.5);
+  padding: 100px 0;
 }
-.destinations .item {
+.custom h1 {
+  color: #ffffff;
+}
+.custom h1 .small {
+  font-weight: 300;
+  font-size: 20px;
+}
+.custom #owl-custom {
+  padding-top: 50px;
+}
+.custom .item {
   cursor: pointer;
   margin: 0 15px;
 }
-.destinations .item .image {
+.custom .item .image {
   position: relative;
 }
-.destinations .item .image img {
+.custom .item .image img {
   display: block;
   border-radius: 5px 5px 0 0;
 }
-.destinations .item .badge {
-  background: none;
-  position: absolute;
-  top: 30px;
-  right: -14px;
-}
-.destinations .item:hover .badge {
-  top: 40px;
-}
-.destinations .item .badge img {
-  border-radius: 0px;
-}
-.destinations .item .image .tools {
+.custom .item .image .tools {
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -392,53 +393,56 @@ a:hover {
   text-align: center;
   color: #ffffff;
 }
-.destinations .item .image .tools i {
+.custom .item .image .tools i {
   font-size: 20px;
 }
-.destinations .item:hover > .image .tools {
+.custom .item .badge {
+  background: none;
+  position: absolute;
+  top: 30px;
+  right: -14px;
+}
+.custom .item .badge img {
+  border-radius: 0px;
+}
+.custom .item:hover .badge {
+  top: 40px;
+}
+.custom .item:hover .details .price {
+  color: #ff3600;
+}
+.custom .item:hover > .image .tools {
   position: absolute;
   height: 50px;
 }
-.destinations .item .details {
-  background-color: #1a171b;
-  color: #e2007a;
+.custom .item .details {
+  background-color: #e2007a;
   padding: 20px;
   border-radius: 0 0 5px 5px;
 }
-.destinations .item .details h1 {
+.custom .item .details h1 {
   margin: 0;
   padding: 0;
   text-align: left;
   text-shadow: none;
 }
-.destinations .item .details .price {
+.custom .item .details .price {
   font-family: "Roboto";
   font-size: 36px;
   font-weight: 900;
   color: #84ff2b;
 }
-.destinations .item:hover .details .price {
-  color: #ff3600;
-}
-.destinations .item .details .desc {
+.custom .item .details .desc {
   font-family: "Roboto";
   font-size: 12px;
   font-weight: 400;
   color: #fff;
 }
 .business {
-  background-image: url(../img/clouds.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-.business .pattern {
-  background-color: rgba(112, 66, 20, 0.5);
   padding: 120px 0 80px 0;
 }
 .business h1 {
-  color: #ffffff;
-  text-shadow: 1px 1px #5a94cc;
+  color: #1a171b;
   margin-bottom: 30px;
 }
 .business .item {
@@ -519,45 +523,33 @@ a:hover {
 .business .item:hover .details a:hover {
   color: #333333;
 }
-.freaky {
-  background-image: url(../img/beach.jpg);
+.destinations {
+  background-image: url(../img/clouds.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position: center center;
 }
-.freaky .pattern {
+.destinations .pattern {
   background-color: rgba(112, 66, 20, 0.5);
-  padding: 120px 0 80px 0;
+  padding: 100px 0;
 }
-.freaky h1 {
+.destinations h1 {
   color: #ffffff;
-  text-shadow: 1px 1px #445983;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
-.freaky .item {
+.destinations .item {
   cursor: pointer;
   margin: 0 15px;
 }
-.freaky .item .image {
+.destinations .item .image {
   position: relative;
 }
-.freaky .item .image img {
+.destinations .item .image img {
   display: block;
   border-radius: 5px 5px 0 0;
 }
-.freaky .item .badge {
-  background: none;
-  position: absolute;
-  top: 30px;
-  right: -14px;
-}
-.freaky .item:hover .badge {
-  top: 40px;
-}
-.freaky .item .badge img {
-  border-radius: 0px;
-}
-.freaky .item .image .tools {
+.destinations .item .image .tools {
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -572,50 +564,62 @@ a:hover {
   text-align: center;
   color: #ffffff;
 }
-.freaky .item .image .tools i {
+.destinations .item .image .tools i {
   font-size: 20px;
 }
-.freaky .item:hover > .image .tools {
+.destinations .item .badge {
+  background: none;
+  position: absolute;
+  top: 30px;
+  right: -14px;
+}
+.destinations .item .badge img {
+  border-radius: 0px;
+}
+.destinations .item:hover .badge {
+  top: 40px;
+}
+.destinations .item:hover > .image .tools {
   position: absolute;
   height: 50px;
 }
-.freaky .item .details {
-  background-color: #e2007a;
-  padding: 20px;
-  border-radius: 0 0 5px 5px;
-}
-.freaky .item .details h1 {
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  text-shadow: none;
-}
-.freaky .item .details .price {
-  font-family: "Roboto";
-  font-size: 36px;
-  font-weight: 900;
-  color: #84ff2b;
-}
-.freaky .item:hover .details .price {
+.destinations .item:hover .details .price {
   color: #ff3600;
 }
-.freaky .item .details .desc {
+.destinations .item:hover .details .desc {
   font-family: "Roboto";
   font-size: 12px;
   font-weight: 400;
   color: #fff;
 }
+.destinations .item .details {
+  background-color: #1a171b;
+  color: #e2007a;
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+}
+.destinations .item .details h1 {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-shadow: none;
+}
+.destinations .item .details .price {
+  font-family: "Roboto";
+  font-size: 36px;
+  font-weight: 900;
+  color: #84ff2b;
+}
 .contact {
   background: #ffffff;
-  padding: 50px 0 10px 0;
+  padding: 120px 0 10px 0;
 }
 .contact h1 {
-  text-shadow: 1px 1px #ffffff;
   margin-bottom: 30px;
 }
 .contact h2 {
   text-align: left;
-  text-shadow: 1px 1px #ffffff;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
   margin-bottom: 30px;
 }
 .contact #map {

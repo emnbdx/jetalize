@@ -54,7 +54,7 @@ $(document).ready(function() {
 	});
 		
 	// CRUISE OWL CAROUSEL
-	$("#owl-freaky").owlCarousel({
+	$("#owl-custom").owlCarousel({
 		pagination : true, // Show paggination dots
 		navigation : false, // Show next and prev buttons
 		slideSpeed : 1000,
@@ -88,13 +88,13 @@ $(document).ready(function() {
 	// Tour details actions
 	$(".business .item button").click(function(){
 	
-		var data_page = $(this).attr("data-page");
+		var data_page = $(this).data("page");
 		
-		$(".business .tour-detail").html("");
-		$(".business .tour-detail").append('<div class="loading">Loading...</div>');
+		$(".business .business-detail").html("");
+		$(".business .business-detail").append('<div class="loading">Chargement...</div>');
 		
-		$("#owl-tours").addClass("hidden");
-		$(".business .tour-detail").removeClass("hidden");
+		$("#owl-business").addClass("hidden");
+		$(".business .business-detail").removeClass("hidden");
 		
 		setTimeout(function(){
 		
@@ -105,16 +105,16 @@ $(document).ready(function() {
 				dataType: 'HTML'
 			}).done( function (result) {
 				
-				$(".business .tour-detail .loading").remove();
-				$(".business .tour-detail").append(result);
+				$(".business .business-detail .loading").remove();
+				$(".business .business-detail").append(result);
 				
-				// Tour details close icon actions
-				$(".business .tour-detail .close").click(function(){
-					$("#owl-tours").removeClass("hidden");
-					$(".business .tour-detail").addClass("hidden");
+				// Business details close icon actions
+				$(".business .business-detail .close").click(function(){
+					$("#owl-business").removeClass("hidden");
+					$(".business .business-detail").addClass("hidden");
 				});
 				
-			}).fail(function() { $(".business .tour-detail .loading").html("File not loading : detail/" + data_page); });
+			}).fail(function() { $(".business .business-detail .loading").html("File not loading : detail/" + data_page); });
 		
 		}, 1000);
 
