@@ -87,6 +87,8 @@ a:hover {
 }
 .pattern {
   background: url(../img/pattern.png) repeat;
+  background-color: rgba(112, 66, 20, 0.5);
+  padding: 100px 0;
 }
 .topnav {
   width: 100%;
@@ -210,21 +212,16 @@ a:hover {
   width: 20px;
   margin-right: 10px;
 }
-.warning {
+.news {
   background-image: url(../img/bg1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
 }
-.warning .pattern {
-  background-color: rgba(112, 66, 20, 0.5);
-  padding: 100px 0;
-}
-.warning h1 {
+.news h1 {
   color: #ffffff;
-}
-.warning .stars {
-  text-align: center;
+  margin-bottom: 50px;
 }
 .price {
   padding: 120px 0 80px 0;
@@ -353,10 +350,6 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.custom .pattern {
-  background-color: rgba(112, 66, 20, 0.5);
-  padding: 100px 0;
-}
 .custom h1 {
   color: #ffffff;
 }
@@ -364,79 +357,32 @@ a:hover {
   font-weight: 300;
   font-size: 20px;
 }
-.custom #owl-custom {
-  padding-top: 50px;
-}
-.custom .item {
-  cursor: pointer;
-  margin: 0 15px;
-}
-.custom .item .image {
+.custom .custom-detail {
   position: relative;
+  margin-top: 50px;
+  background-color: #ffffff;
+  border-radius: 3px;
 }
-.custom .item .image img {
-  display: block;
-  border-radius: 5px 5px 0 0;
-}
-.custom .item .image .tools {
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  z-index: 10;
-  bottom: 0px;
-  height: 0px;
-  line-height: 50px;
-  background: rgba(239, 39, 0, 0.5);
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 600;
+.custom .custom-detail .loading {
   text-align: center;
-  color: #ffffff;
 }
-.custom .item .image .tools i {
-  font-size: 20px;
+.custom .custom-detail h1 {
+  color: #1a171b;
 }
-.custom .item .badge {
-  background: none;
+.custom .custom-detail img {
+  border-radius: 3px 0 0 3px;
+}
+.custom .custom-detail .desc {
+  margin-top: 40px;
+}
+.custom .custom-detail .close {
   position: absolute;
-  top: 30px;
-  right: -14px;
+  top: 0;
+  right: 0;
 }
-.custom .item .badge img {
-  border-radius: 0px;
-}
-.custom .item:hover .badge {
-  top: 40px;
-}
-.custom .item:hover .details .price {
-  color: #ff3600;
-}
-.custom .item:hover > .image .tools {
-  position: absolute;
-  height: 50px;
-}
-.custom .item .details {
-  background-color: #e2007a;
-  padding: 20px;
-  border-radius: 0 0 5px 5px;
-}
-.custom .item .details h1 {
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  text-shadow: none;
-}
-.custom .item .details .price {
-  font-family: "Roboto";
-  font-size: 36px;
-  font-weight: 900;
-  color: #84ff2b;
-}
-.custom .item .details .desc {
-  font-family: "Roboto";
-  font-size: 12px;
-  font-weight: 400;
-  color: #fff;
+.custom .custom-row {
+  padding-top: 50px;
+  text-align: center;
 }
 .business {
   padding: 120px 0 80px 0;
@@ -448,167 +394,54 @@ a:hover {
 .business .item {
   margin: 0 20px;
 }
-.business .item .image {
-  position: relative;
+.business .item img {
+  border-radius: 3px 3px 0 0;
 }
-.business .item .image img {
-  border-radius: 5px 5px 0 0;
-}
-.business .item .image .save {
-  width: 100%;
-  position: absolute;
-  top: -40px;
-  z-index: 100;
-}
-.business .item .image .save-inner {
-  width: 80px;
-  height: 80px;
-  padding-top: 15px;
-  margin: 0 auto;
-  font-family: "Roboto";
-  font-size: 18px;
-  font-weight: 900;
-  letter-spacing: -1px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 20px;
-  background: #ef2700;
-  border-radius: 50%;
-  border: 6px solid rgba(255, 255, 255, 0.5);
-}
-.business .item .image .title {
-  width: 100%;
-  position: absolute;
-  bottom: 20px;
-  background: rgba(239, 39, 0, 0.5);
-  font-family: "Roboto";
+.business .item .title {
   font-size: 20px;
-  font-weight: 400;
-  letter-spacing: -1px;
-  color: #ffffff;
-  padding: 10px 0;
-  text-align: center;
 }
-.business .item .details {
-  background: #ffffff;
-  padding: 25px;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 400;
-  color: #999999;
-  line-height: 18px;
-  border-radius: 0 0 5px 5px;
-  text-align: center;
+.business .item:hover > .badge {
+  top: 40px;
 }
-.business .item .details a {
-  font-weight: 700;
-  color: #ef2700;
-  text-decoration: none;
-}
-.business .item .details a:hover {
-  color: #333333;
-}
-.business .item:hover .image .title {
-  background: rgba(17, 42, 93, 0.8);
-}
-.business .item:hover .image .save {
-  top: 20px;
-}
-.business .item:hover .image .save-inner {
+.business .item:hover > .business-title {
   background: #e2007a;
 }
-.business .item:hover .details a {
-  color: #e2007a;
-}
-.business .item:hover .details a:hover {
-  color: #333333;
-}
-.destinations {
-  background-image: url(../img/bg3.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-.destinations .pattern {
-  background-color: rgba(112, 66, 20, 0.5);
-  padding: 100px 0;
-}
-.destinations h1 {
-  color: #ffffff;
-  margin-bottom: 50px;
-}
-.destinations .item {
-  cursor: pointer;
-  margin: 0 15px;
-}
-.destinations .item .image {
-  position: relative;
-}
-.destinations .item .image img {
-  display: block;
-  border-radius: 5px 5px 0 0;
-}
-.destinations .item .image .tools {
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  z-index: 10;
-  bottom: 0px;
-  height: 0px;
-  line-height: 50px;
-  background: rgba(239, 39, 0, 0.5);
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  color: #ffffff;
-}
-.destinations .item .image .tools i {
-  font-size: 20px;
-}
-.destinations .item .badge {
+.business .item .badge {
   background: none;
   position: absolute;
   top: 30px;
   right: -14px;
 }
-.destinations .item .badge img {
-  border-radius: 0px;
+.business .item .business-title {
+  padding: 15px 0;
+  background: #1a171b;
+  text-align: center;
 }
-.destinations .item:hover .badge {
-  top: 40px;
+.business .item .business-title .title {
+  font-family: "Roboto Slab";
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 -3px 0;
 }
-.destinations .item:hover > .image .tools {
-  position: absolute;
-  height: 50px;
-}
-.destinations .item:hover .details .price {
-  color: #ff3600;
-}
-.destinations .item:hover .details .desc {
+.business .item .business-details {
+  padding: 25px;
+  background: #ffffff;
   font-family: "Roboto";
-  font-size: 12px;
-  font-weight: 400;
-  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #777777;
+  border-radius: 0 0 3px 3px;
 }
-.destinations .item .details {
-  background-color: #1a171b;
-  color: #e2007a;
-  padding: 20px;
-  border-radius: 0 0 5px 5px;
+.warning {
+  background-image: url(../img/bg3.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
 }
-.destinations .item .details h1 {
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  text-shadow: none;
-}
-.destinations .item .details .price {
-  font-family: "Roboto";
-  font-size: 36px;
-  font-weight: 900;
-  color: #84ff2b;
+.warning h1 {
+  color: #ffffff;
 }
 .contact {
   background: #ffffff;

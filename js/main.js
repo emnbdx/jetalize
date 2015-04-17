@@ -53,19 +53,6 @@ $(document).ready(function() {
 		itemsMobile : [480,1] // itemsMobile disabled - inherit from itemsTablet option
 	});
 		
-	// CRUISE OWL CAROUSEL
-	$("#owl-custom").owlCarousel({
-		pagination : true, // Show paggination dots
-		navigation : false, // Show next and prev buttons
-		slideSpeed : 1000,
-		rewindSpeed : 1000,
-		items : 3, //10 items above 1000px browser width
-		itemsDesktop : [1000,3], //5 items between 1000px and 901px
-		itemsDesktopSmall : [900,1], // betweem 900px and 601px
-		itemsTablet: [600,1], //2 items between 600 and 0
-		itemsMobile : [480,1] // itemsMobile disabled - inherit from itemsTablet option
-	});
-		
 	// Flights & Hotels Tabs Settings
 	$(".tabs a").click(function(){
 		$(this).css("outline", "none");
@@ -86,15 +73,15 @@ $(document).ready(function() {
 	});
 	
 	// Tour details actions
-	$(".business .item button").click(function(){
+	$(".custom button").click(function(){
 	
 		var data_page = $(this).data("page");
 		
-		$(".business .business-detail").html("");
-		$(".business .business-detail").append('<div class="loading">Chargement...</div>');
+		$(".custom .custom-detail").html("");
+		$(".custom .custom-detail").append('<div class="loading">Chargement...</div>');
 		
-		$("#owl-business").addClass("hidden");
-		$(".business .business-detail").removeClass("hidden");
+		$(".custom-row").addClass("hidden");
+		$(".custom .custom-detail").removeClass("hidden");
 		
 		setTimeout(function(){
 		
@@ -105,16 +92,16 @@ $(document).ready(function() {
 				dataType: 'HTML'
 			}).done( function (result) {
 				
-				$(".business .business-detail .loading").remove();
-				$(".business .business-detail").append(result);
+				$(".custom .custom-detail .loading").remove();
+				$(".custom .custom-detail").append(result);
 				
-				// Business details close icon actions
-				$(".business .business-detail .close").click(function(){
-					$("#owl-business").removeClass("hidden");
-					$(".business .business-detail").addClass("hidden");
+				// custom details close icon actions
+				$(".custom .custom-detail .close").click(function(){
+					$(".custom-row").removeClass("hidden");
+					$(".custom .custom-detail").addClass("hidden");
 				});
 				
-			}).fail(function() { $(".business .business-detail .loading").html("File not loading : detail/" + data_page); });
+			}).fail(function() { $(".custom .custom-detail .loading").html("File not loading : detail/" + data_page); });
 		
 		}, 1000);
 
