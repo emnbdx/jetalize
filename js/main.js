@@ -154,28 +154,35 @@ var contact_send = function(){
 	$(".mail-success").addClass('hidden'); 
 
 	if (name == "") { 
-		$(".mail-error").text("Votre nom est vide"); 
+		$(".mail-error").text("Le nom est obligatoire"); 
 		$(".mail-error").removeClass('hidden'); 
 		$("#name").focus(); 
+		return;
 	}
-	else if (email == "") {
-		$(".mail-error").text("Votre email est vide");
+	
+	if (email == "") {
+		$(".mail-error").text("L'email est obligatoire");
 		$(".mail-error").removeClass('hidden');
 		$("#email").focus();
+		return;
 	}
-	/*else if (phone == "") {
-		$(".mail-error").text("Votre téléphone est vide");
+
+	var regex = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    if(!regex.test(email)) {
+    	$(".mail-error").text("L'email est invalide");
 		$(".mail-error").removeClass('hidden');
-		$("#phone").focus();
-	}*/
-	else if (message == "") { 
-		$(".mail-error").text("Votre message est vide");
+		$("#email").focus();
+		return;
+    }
+
+	if (message == "") { 
+		$(".mail-error").text("Le message est obligatoire");
 		$(".mail-error").removeClass('hidden');
 		$("#message").focus();
+		return;
 	}
-	else {
-		$.post("contact.php", 
-			{ 
+
+	$.post("contact.php", { 
 				name:name, 
 				email:email, 
 				phone:phone, 
@@ -197,8 +204,6 @@ var contact_send = function(){
 					$(".mail-error").removeClass('hidden');
 				}
 			});
-	}
-
 };
 
 function initialize() {
