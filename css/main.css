@@ -552,4 +552,16 @@ a:hover {
     letter-spacing: -1px;
     top: 30%;
   }
+  .news {
+    background-size: cover;
+    background-attachment: initial;
+  }
+  .custom {
+    background-size: cover;
+    background-attachment: initial;
+  }
+  .warning {
+    background-size: cover;
+    background-attachment: initial;
+  }
 }
