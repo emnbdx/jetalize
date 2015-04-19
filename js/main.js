@@ -15,8 +15,8 @@ $(document).ready(function() {
 	owl_slider.owlCarousel({
 		pagination : false, // Show paggination dots
 		navigation : false, // Show next and prev buttons
-		slideSpeed : 1000,
-		rewindSpeed : 1000,
+		slideSpeed : 100,
+		rewindSpeed : 100,
 		singleItem: true,
 		autoPlay: 5000,
 		stopOnHover: true,
