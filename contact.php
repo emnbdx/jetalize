@@ -1,5 +1,5 @@
 <?php
-	$MAIL_ADRESSE = 'eddy.montus@gmail.com';
+	$MAIL_ADRESSE = 'contact@jetalize.fr';
 	$MAIL_SUJET = 'Contact via le site';
 
 	$name = htmlspecialchars($_POST['name']);
