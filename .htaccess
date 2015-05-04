@@ -10,13 +10,6 @@ AddDefaultCharset UTF-8
 	AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript
 </IfModule>
 
-# Redirection
-<IfModule mod_alias.c>
-	Redirect permanent /content/contact.php /contenu/contact.php
-	Redirect permanent /content/me.php /contenu/qui-suis-je.php
-	Redirect permanent /content/price.php /contenu/tarifs.php
-</IfModule>
-
 # Contrôle du cache navigateur - Expire headers  
 <IfModule mod_expires.c>  
     ExpiresActive On
