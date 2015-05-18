@@ -25,7 +25,6 @@ h1 {
 	font-weight: 700;
 	letter-spacing: -1px;
 	text-align: center;
-	text-shadow: 1px 1px rgba(0,0,0,.5);
 	color: @mainColor;
 	margin: 0;
 	padding: 0;
@@ -80,23 +79,7 @@ a {
 	text-transform: uppercase;
 
 	color: #ffffff;
-	text-shadow: 1px 1px rgba(0,0,0,.5);
-	background-image: -webkit-gradient(
-		linear,
-		left top,
-		left bottom,
-		color-stop(0, lighten(@mainColor, 20%)),
-		color-stop(1, @mainColor)
-	);
-	background-image: -o-linear-gradient(bottom, lighten(@mainColor, 20%) 0%, @mainColor 100%);
-	background-image: -moz-linear-gradient(bottom, lighten(@mainColor, 20%) 0%, @mainColor 100%);
-	background-image: -webkit-linear-gradient(bottom, lighten(@mainColor, 20%) 0%, @mainColor 100%);
-	background-image: -ms-linear-gradient(bottom, lighten(@mainColor, 20%) 0%, @mainColor 100%);
-	background-image: linear-gradient(to bottom, lighten(@mainColor, 20%) 0%, @mainColor 100%);
-
-	/*&:hover {
-		text-shadow: 1px 1px #35661c;
-	}*/
+	background-color: @mainColor;
 
 	&:hover {
 		color: @secondColor;
@@ -217,7 +200,6 @@ a {
 				font-weight: 300;
 				color: #ffffff;
 				letter-spacing: -4px;
-				text-shadow: 1px 1px rgba(0,0,0,0.5);
 
 				&.dark {
 
@@ -608,7 +590,6 @@ a {
 	
 	h2 {
 		text-align: left;
-		text-shadow: 1px 1px rgba(0,0,0,.5);
 		margin-bottom: 30px;
 	}
 	

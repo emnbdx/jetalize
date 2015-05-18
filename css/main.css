@@ -17,7 +17,6 @@ h1 {
   font-weight: 700;
   letter-spacing: -1px;
   text-align: center;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
   color: #1a171b;
   margin: 0;
   padding: 0;
@@ -64,16 +63,7 @@ a:hover {
   border: none;
   text-transform: uppercase;
   color: #ffffff;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4f4652), color-stop(1, #1a171b));
-  background-image: -o-linear-gradient(bottom, #4f4652 0%, #1a171b 100%);
-  background-image: -moz-linear-gradient(bottom, #4f4652 0%, #1a171b 100%);
-  background-image: -webkit-linear-gradient(bottom, #4f4652 0%, #1a171b 100%);
-  background-image: -ms-linear-gradient(bottom, #4f4652 0%, #1a171b 100%);
-  background-image: linear-gradient(to bottom, #4f4652 0%, #1a171b 100%);
-  /*&:hover {
-		text-shadow: 1px 1px #35661c;
-	}*/
+  background-color: #1a171b;
 }
 .btn:hover {
   color: #e2007a;
@@ -167,7 +157,6 @@ a:hover {
   font-weight: 300;
   color: #ffffff;
   letter-spacing: -4px;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 .slider .item a .content.dark {
   color: #e2007a;
@@ -452,7 +441,6 @@ a:hover {
 }
 .contact h2 {
   text-align: left;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
   margin-bottom: 30px;
 }
 .contact #map {
