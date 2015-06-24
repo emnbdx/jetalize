@@ -107,7 +107,15 @@ $(document).ready(function() {
 
 	});
 
-	$(".new").click(function () {
+	$(".menu-rents").click(function () {
+		$('.rents').click();
+	});
+
+	$(".menu-bouys").click(function () {
+		$('.buoys').click();
+	});
+
+	$(".menu-boats").click(function () {
 		$('.boats').click();
 	});
 
