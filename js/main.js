@@ -216,6 +216,8 @@ var contact_send = function(){
 
 function initialize() {
 				
+	var point = new google.maps.LatLng(45.6832407, -1.1798334000000068);
+
 	// Basic options for a simple Google Map
 	// For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
 	var mapOptions = {
@@ -223,128 +225,8 @@ function initialize() {
 		zoom: 11,
 
 		// The latitude and longitude to center the map (always required)
-		center: new google.maps.LatLng(45.6832407, -1.1798334000000068),
+		center: point,
 
-		// How you would like to style the map. 
-		// This is where you would paste any style found on Snazzy Maps.
-		styles: [
-			{
-				featureType:"road",
-				elementType:"labels",
-				stylers:[
-					{
-						visibility:"simplified"
-					},
-					{
-						lightness:20
-					}
-					]
-			},
-			{
-				featureType:"administrative.land_parcel",
-				elementType:"all",
-				stylers:[
-					{
-						visibility:"off"
-					}
-				]	
-			},
-			{
-				featureType:"landscape.man_made",
-				elementType:"all",
-				stylers:[
-					{
-						visibility:"off"
-					}
-				]
-			},
-			{
-				featureType:"transit",
-				elementType:"all",
-				stylers:[
-					{
-						visibility:"off"
-					}
-				]
-			},
-			{
-				featureType:"road.local",
-				elementType:"labels",
-				stylers:[
-					{
-						visibility:"simplified"
-					}
-				]
-			},
-			{
-				featureType:"road.local",
-				elementType:"geometry",
-				stylers:[
-					{
-						visibility:"simplified"
-					}
-				]	
-			},
-			{
-				featureType:"road.highway",
-				elementType:"labels",
-				stylers:[
-					{
-						visibility:"simplified"
-					}
-				]
-			},
-			{
-				featureType:"poi",
-				elementType:"labels",
-				stylers:[
-					{
-						visibility:"off"
-					}
-				]
-			},
-			{
-				featureType:"road.arterial",
-				elementType:"labels",
-				stylers:[
-					{
-						visibility:"off"
-					}
-				]
-			},
-			{
-				featureType:"water",
-				elementType:"all",
-				stylers:[
-					{
-						hue:"#a1cdfc"
-					},
-					{
-						saturation:30
-					},{
-						lightness:49
-					}
-				]
-			},
-			{
-				featureType:"road.highway",
-				elementType:"geometry",
-				stylers:[
-					{
-						hue:"#f49935"
-					}
-				]
-			},
-			{
-				featureType:"road.arterial",
-				elementType:"geometry",
-				stylers:[
-					{
-						hue:"#fad959"
-					}
-				]
-			}
-		]
 	};
 
 	// Get the HTML DOM element that will contain your map 
@@ -353,6 +235,12 @@ function initialize() {
 
 	// Create the Google Map using out element and options defined above
 	var map = new google.maps.Map(mapCanvas, mapOptions);
+
+	var marker = new google.maps.Marker({
+    	position: point,
+    	map: map,
+    	title: 'Jet Alizé'
+	});
 }
 
 wow.init();
