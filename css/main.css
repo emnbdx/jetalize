@@ -168,6 +168,12 @@ a:hover {
   color: #ffffff;
   letter-spacing: -4px;
 }
+.slider .item a .content.top {
+  top: 40%;
+}
+.slider .item a .content.bottom {
+  top: 60%;
+}
 .slider .item a .content.dark {
   color: #e2007a;
 }
