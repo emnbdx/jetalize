@@ -44,3 +44,13 @@ Header set Cache-Control "max-age=604800, private"
 Header set Cache-Control "max-age=600, private, must-revalidate"  
 </FilesMatch>  
 </IfModule> 
+
+RewriteEngine on
+
+#First rewrite any request to the wrong domain to use the correct one (here www.)
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#Now, rewrite to HTTPS:
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
