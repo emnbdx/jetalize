@@ -111,12 +111,12 @@ $(document).ready(function() {
 		$('.rents').click();
 	});
 
-	$(".menu-bouys").click(function () {
-		$('.buoys').click();
+	$(".menu-treks").click(function () {
+		$('.treks').click();
 	});
 
-	$(".menu-boats").click(function () {
-		$('.boats').click();
+	$(".menu-bouys").click(function () {
+		$('.buoys').click();
 	});
 
 	if($("#copyright").text() != new Date().getFullYear()) {

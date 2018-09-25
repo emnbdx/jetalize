@@ -11,7 +11,8 @@ body {
   background: #f1f1f1;
   padding: 0;
 }
-h1 {
+h1,
+h2 {
   font-family: "Roboto Slab";
   font-size: 2em;
   font-weight: 700;
@@ -21,7 +22,7 @@ h1 {
   margin: 0;
   padding: 0;
 }
-h2 {
+h3 {
   font-family: "Roboto Slab";
   font-size: 1.5em;
   font-weight: 700;
@@ -224,14 +225,14 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.news h1 {
+.news h2 {
   color: #FFFFFF;
   margin-bottom: 50px;
 }
 .price {
   padding: 120px 0 80px 0;
 }
-.price h1 {
+.price h2 {
   color: #1a171b;
   margin-bottom: 30px;
 }
@@ -355,10 +356,10 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.custom h1 {
+.custom h2 {
   color: #ffffff;
 }
-.custom h1 .small {
+.custom h2 .small {
   font-weight: 300;
   font-size: 20px;
 }
@@ -371,7 +372,7 @@ a:hover {
 .custom .custom-detail .loading {
   text-align: center;
 }
-.custom .custom-detail h1 {
+.custom .custom-detail h2 {
   color: #1a171b;
 }
 .custom .custom-detail img {
@@ -392,7 +393,7 @@ a:hover {
 .business {
   padding: 120px 0 80px 0;
 }
-.business h1 {
+.business h2 {
   color: #1a171b;
   margin-bottom: 30px;
 }
@@ -445,14 +446,14 @@ a:hover {
   background-position: center center;
   background-attachment: fixed;
 }
-.warning h1 {
+.warning h2 {
   color: #ffffff;
 }
 .contact {
   background: #ffffff;
   padding: 120px 0 10px 0;
 }
-.contact h1 {
+.contact h2 {
   margin-bottom: 30px;
 }
 .contact h2 {
