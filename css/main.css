@@ -449,15 +449,24 @@ a:hover {
 .warning h2 {
   color: #ffffff;
 }
+.place,
+.content {
+  padding: 120px 0 80px 0;
+}
+.place .small,
+.content .small {
+  color: #000000;
+}
+.content {
+  padding: 0 0 80px 0;
+  margin-top: 200px;
+}
 .contact {
   background: #ffffff;
   padding: 120px 0 10px 0;
 }
 .contact h2 {
   margin-bottom: 30px;
-}
-.contact .small {
-  color: #000000;
 }
 .contact #map {
   height: 185px;
@@ -567,5 +576,10 @@ a:hover {
   .warning {
     background-size: cover;
     background-attachment: initial;
+  }
+}
+@media (min-width: 780px) and (max-width: 1024px) {
+  .content {
+    margin-top: 300px;
   }
 }
