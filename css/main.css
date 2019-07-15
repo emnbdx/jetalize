@@ -456,9 +456,8 @@ a:hover {
 .contact h2 {
   margin-bottom: 30px;
 }
-.contact h2 {
-  text-align: left;
-  margin-bottom: 30px;
+.contact .small {
+  color: #000000;
 }
 .contact #map {
   height: 185px;
