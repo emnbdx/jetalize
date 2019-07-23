@@ -115,6 +115,10 @@ $(document).ready(function() {
 		$('.treks').click();
 	});
 
+	$(".menu-boats").click(function () {
+		$('.boats').click();
+	});
+
 	$(".menu-bouys").click(function () {
 		$('.buoys').click();
 	});
@@ -244,4 +248,6 @@ function initialize() {
 }
 
 wow.init();
-google.maps.event.addDomListener(window, 'load', initialize);
+if(google) {
+	google.maps.event.addDomListener(window, 'load', initialize);
+}

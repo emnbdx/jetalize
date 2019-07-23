@@ -252,7 +252,7 @@ a:hover {
 }
 .price .tabs a {
   font-family: "Roboto Slab";
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 600;
   color: #1a171b;
   letter-spacing: -1px;
@@ -265,6 +265,7 @@ a:hover {
 }
 .price .tabs-content .content {
   display: none;
+  margin: 0;
 }
 .price .tabs-content .content .item {
   background: #f1f1f1;
@@ -491,21 +492,13 @@ a:hover {
 .contact .social-icons .fa-facebook:hover {
   background: #3b5998;
 }
-.contact .social-icons .fa-twitter {
-  color: #00a0d1;
-  border-color: #00a0d1;
-  padding: .3em;
+.contact .social-icons .fa-instagram {
+  color: #bc2a8d;
+  border-color: #bc2a8d;
+  padding: .3em 0.4em;
 }
-.contact .social-icons .fa-twitter:hover {
-  background: #00a0d1;
-}
-.contact .social-icons .fa-google-plus {
-  color: #db4a39;
-  border-color: #db4a39;
-  padding: .3em;
-}
-.contact .social-icons .fa-google-plus:hover {
-  background: #db4a39;
+.contact .social-icons .fa-instagram:hover {
+  background: #bc2a8d;
 }
 .contact .social-icons a {
   font-size: 26px;
